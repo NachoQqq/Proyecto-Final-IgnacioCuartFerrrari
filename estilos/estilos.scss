@@ -1,0 +1,23 @@
+$color-paleta-1:#3e2d4e;
+$color-paleta-2:#554365 ;
+$color-paleta-3:#826e92;
+$color-paleta-4:#9883a9;
+$color-fade-1:#ad5389;
+$color-fade-2: #3c1053;
+$alturaXXL:1000px;
+$alturaXL:550px;
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@import "dropsemanal.scss";
+@import "maps.scss";
+@import "contact.scss";
+@import "cards.scss";
+@import "titulos.scss";
+@import "galeria.scss";
+@import "navbar.scss";
+@import "footer.scss";

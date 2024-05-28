@@ -1,0 +1,44 @@
+.contact{
+    display: flex;
+    justify-content: space-between;
+    font-size: 190px;
+    background-image: url(../assets/light-purple-pattern-with-curved-lines-colorful-illustration-with-curved-lines-pattern-for-websites-landing-pages-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    padding-bottom: calc($alturaXXL/2);
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact a:hover{
+    color: red;
+}
+@media only screen and (max-width: $alturaXL){
+    .contact{ display: block;
+        text-align: center;
+        padding-bottom: 0%;
+}
+}
+.contact1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 190px;
+    background-image: url(../assets/light-purple-pattern-with-curved-lines-colorful-illustration-with-curved-lines-pattern-for-websites-landing-pages-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+}
+@media only screen and (max-width: $alturaXL){
+    .contact1{ display: block;
+        text-align: center;
+}
+}
+.contact1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact1 a:hover{
+    color: red;
+}

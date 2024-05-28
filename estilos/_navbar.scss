@@ -1,0 +1,45 @@
+.navbar{
+    background-image: linear-gradient(to right,$color-fade-1,$color-fade-2);
+
+    .navbar-brand{
+    text-shadow: 0 0 4px;
+    }
+    .navbar-brand:hover{
+        transform: scale(1.2);
+        transition: 0.6s;
+    }
+    .navbar-brand span{
+    color: black;
+    text-shadow: 0 0 4px;
+    }
+    
+    .nav-link{
+    color: #fff !important;
+    }
+    .nav-link:hover{
+    color:$color-fade-1 !important;
+    font-size: 20px;
+    }
+    
+}
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+.transition-soft {
+    transition: all .3s ease
+}
+@media (min-width: 768px) {
+    .logo-assets {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        position: relative;
+        top: 0vh;
+        left: auto;
+    }
+}
+.logo-assets{
+    border-radius: 5%;
+    @include centrar;
+}

@@ -1,0 +1,58 @@
+.galeria{
+    background-image: url(../img/light-purple-pattern-with-curved-lines-colorful-illustration-with-curved-lines-pattern-for-websites-landing-pages-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(4,180px);
+    grid-template-areas: 
+    "img1 img1 img1 img3 img3 img2 img2"
+    "img1 img1 img1 img3 img3 img2 img2"
+    "img1 img1 img1 img4 img4 img2 img2"
+    "img1 img1 img1 img4 img4 img2 img2";
+    grid-gap: 15px;
+    padding: 22px
+}
+/*en esta resolucion elimino una imagen de rayas que solamente estaba a modo de decoracion en resoluciones mayores*/
+@media only screen and (max-width: 720px) {
+    .galeria{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas: 
+        "img1 img1 img2"
+        "img1 img1 img2"
+        "img3 img3 img2"
+    }
+}
+@media only screen and (max-width: $alturaXL) {
+    .galeria{
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas: 
+        "img1 img1"
+        "img3 img3"
+        "img2 img2"
+        "img2 img2"
+    }
+}
+.item{
+    border: 6px solid black;
+    background-position: center;
+    background-size: cover;
+}
+.item1{
+    background-image:url('../assets/quesomos.jpg');
+    grid-area: img1 ;
+}
+.item2{
+    grid-area: img2;
+    background-image:url('../assets/perchas.jpg')
+}
+.item3{
+    grid-area: img3;
+    background-image:url('../assets/wrld.jpg')
+}
+.item4{
+    grid-area: img4;
+    background-image:url('../assets/backgroundredlines.jpg')
+}

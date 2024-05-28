@@ -1,0 +1,13 @@
+footer{
+    @include centrar;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+footer a{
+    color: darkorchid;
+}
+footer a:hover{
+    color:$color-fade-1;
+}

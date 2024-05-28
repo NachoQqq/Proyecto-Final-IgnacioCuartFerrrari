@@ -1,0 +1,29 @@
+.t1{
+    @include centrar;
+    color: black;
+    background-image: linear-gradient(to left,$color-fade-1,$color-fade-2);
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 5px;
+    text-shadow: 0 0 5px whitesmoke;
+}
+.t2{
+    @include centrar;
+    color: #fff;
+    background-color: #333;
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 5px;
+    text-shadow: 0 0 5px rgb(21, 6, 27);
+}
+.qs{
+    @include centrar;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    background-image: linear-gradient(to left,$color-fade-1,$color-fade-2);
+}
+.qs span{
+    color: #000;
+    text-shadow: 0 0 5px #fff;
+}
