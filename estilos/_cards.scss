@@ -18,9 +18,9 @@
 .card-body{
     background-color: $color-paleta-4;
 }
-.card-assets-top{filter: sepia(100%);
+.card-img-top{filter: sepia(100%);
 }
-.card-assets-top:hover{
+.card-img-top:hover{
 transform: scale(1.4);
 border-radius: 15px;
 filter: sepia(0%);

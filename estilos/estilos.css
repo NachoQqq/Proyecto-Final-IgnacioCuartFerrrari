@@ -36,17 +36,23 @@
 .contact a {
   text-decoration: none;
   color: #fff;
+  animation: mover 5s infinite;
 }
 
 .contact a:hover {
   color: red;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 640px) {
   .contact {
     display: block;
     text-align: center;
     padding-bottom: 0%;
+  }
+  .contact a {
+    animation: parpadeo 3s infinite;
+    animation: colorChange 5.2s infinite;
+    transition: color 1.3s ease-in-out;
   }
 }
 .contact1 {
@@ -68,12 +74,46 @@
 .contact1 a {
   text-decoration: none;
   color: #fff;
+  animation: parpadeo 3s infinite;
 }
 
 .contact1 a:hover {
   color: red;
 }
 
+@keyframes parpadeo {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #3e2d4e;
+  }
+  33% {
+    color: #ad5389;
+  }
+  66% {
+    color: #3c1053;
+  }
+  100% {
+    color: violet;
+  }
+}
 .cards {
   padding: 20px;
   display: flex;
@@ -98,11 +138,11 @@
   background-color: #9883a9;
 }
 
-.card-assets-top {
+.card-img-top {
   filter: sepia(100%);
 }
 
-.card-assets-top:hover {
+.card-img-top:hover {
   transform: scale(1.4);
   border-radius: 15px;
   filter: sepia(0%);
@@ -172,7 +212,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, 180px);
-  grid-template-areas: "assets1 assets1 assets1 assets3 assets3 assets2 assets2" "assets1 assets1 assets1 assets3 assets3 assets2 assets2" "assets1 assets1 assets1 assets4 assets4 assets2 assets2" "assets1 assets1 assets1 assets4 assets4 assets2 assets2";
+  grid-template-areas: "img1 img1 img1 img3 img3 img2 img2" "img1 img1 img1 img3 img3 img2 img2" "img1 img1 img1 img4 img4 img2 img2" "img1 img1 img1 img4 img4 img2 img2";
   grid-gap: 15px;
   padding: 22px;
 }
@@ -182,14 +222,14 @@
   .galeria {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 180px);
-    grid-template-areas: "assets1 assets1 assets2" "assets1 assets1 assets2" "assets3 assets3 assets2";
+    grid-template-areas: "img1 img1 img2" "img1 img1 img2" "img3 img3 img2";
   }
 }
 @media only screen and (max-width: 550px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 180px);
-    grid-template-areas: "assets1 assets1" "assets3 assets3" "assets2 assets2" "assets2 assets2";
+    grid-template-areas: "img1 img1" "img3 img3" "img2 img2" "img2 img2";
   }
 }
 .item {
@@ -200,21 +240,21 @@
 
 .item1 {
   background-image: url("../assets/quesomos.jpg");
-  grid-area: assets1;
+  grid-area: img1;
 }
 
 .item2 {
-  grid-area: assets2;
+  grid-area: img2;
   background-image: url("../assets/perchas.jpg");
 }
 
 .item3 {
-  grid-area: assets3;
+  grid-area: img3;
   background-image: url("../assets/wrld.jpg");
 }
 
 .item4 {
-  grid-area: assets4;
+  grid-area: img4;
   background-image: url("../assets/backgroundredlines.jpg");
 }
 
@@ -250,7 +290,7 @@
 }
 
 @media (min-width: 768px) {
-  .logo-assets {
+  .logo-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +299,7 @@
     left: auto;
   }
 }
-.logo-assets {
+.logo-img {
   border-radius: 5%;
   display: flex;
   justify-content: center;

@@ -30,7 +30,7 @@
     transition: all .3s ease
 }
 @media (min-width: 768px) {
-    .logo-assets {
+    .logo-img {
         display: flex;
         justify-content: center;
         align-items: center; 
@@ -39,7 +39,7 @@
         left: auto;
     }
 }
-.logo-assets{
+.logo-img{
     border-radius: 5%;
     @include centrar;
 }

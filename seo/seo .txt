@@ -1,5 +1,5 @@
 Agregué meta keybords 
 agregué meta descriptions diferentes en todas las paginas
 en el html puse comentarios referentes a cada seccion 
-reduje el peso de las assets
+reduje el peso de las img
 puse los alt correspondientes en los productos 

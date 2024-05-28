@@ -11,15 +11,21 @@
 .contact a{
     text-decoration: none;
     color: #fff;
+    animation: mover 5s infinite;
 }
 .contact a:hover{
     color: red;
 }
-@media only screen and (max-width: $alturaXL){
+@media only screen and (max-width: 640px){
     .contact{ display: block;
         text-align: center;
         padding-bottom: 0%;
 }
+    .contact a{
+        animation: parpadeo 3s infinite;
+        animation: colorChange 5.2s infinite;
+        transition: color 1.3s ease-in-out;
+    }
 }
 .contact1{
     display: flex;
@@ -38,7 +44,33 @@
 .contact1 a{
     text-decoration: none;
     color: #fff;
+    animation: parpadeo 3s infinite;
 }
 .contact1 a:hover{
     color: red;
+}
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes colorChange {
+    0% { color:$color-paleta-1; }
+    33% { color:$color-fade-1; }
+    66% { color:$color-fade-2; }
+    100% { color: violet; }
 }
